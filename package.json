@@ -4,7 +4,8 @@
   "description": "Portal para programadores encontrarem vagas / Projeto de estudo",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "nodemon app.js"
+
   },
   "keywords": [
     "JobFinder",
