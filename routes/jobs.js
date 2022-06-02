@@ -1,6 +1,6 @@
 const express = require("express");
-const Job = require("../models/Job");
 const router = express.Router();
+const Job = require("../models/Job");
 
 router.get("/api", (req, res) => {
     res.send("Rotas funcionando");
@@ -10,7 +10,7 @@ router.post("/add", (req, res) => {
 
     let {title, salary, company, email, newJob, description} = req.body;
 
-    job.create({title, salary, company, email, newJob, description})
+    Job.create({title, salary, company, email, newJob, description})
     .then(()=> res.redirect("/"))
 
     .catch(err => console.log(err));
