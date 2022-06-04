@@ -6,6 +6,10 @@ router.get("/api", (req, res) => {
     res.send("Rotas funcionando");
 })
 
+router.get("/add", (req, res) => {
+    res.render('add');
+})
+
 router.post("/add", (req, res) => {
 
     let {title, salary, company, email, newJob, description} = req.body;
